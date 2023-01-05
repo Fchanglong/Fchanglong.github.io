@@ -1,0 +1,161 @@
+#article-container
+  .flink
+    margin-bottom: 20px
+
+    .flink-list
+      overflow: auto
+      padding: 10px 10px 0
+      text-align: center
+
+      & > .flink-list-item
+        position: relative
+        float: left
+        overflow: hidden
+        margin: 15px 7px
+        width: calc(100% / 3 - 15px)
+        height: 90px
+        border-radius: 8px
+        line-height: 17px
+        -webkit-transform: translateZ(0)
+
+        +maxWidth1024()
+          width: calc(50% - 15px) !important
+
+        +maxWidth600()
+          width: calc(100% - 15px) !important
+
+        &:hover
+          .flink-item-icon
+            margin-left: -10px
+            width: 0
+
+        &:before
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          z-index: -1
+          background: var(--text-bg-hover)
+          content: ''
+          transition: transform .3s ease-out
+          transform: scale(0)
+
+        &:hover:before,
+        &:focus:before,
+        &:active:before
+          transform: scale(1)
+
+        a
+          color: var(--font-color)
+          text-decoration: none
+
+          .flink-item-icon
+            float: left
+            overflow: hidden
+            margin: 15px 10px
+            width: 60px
+            height: 60px
+            border-radius: 35px
+            transition: width .3s ease-out
+
+            img
+              width: 100%
+              height: 100%
+              transition: filter 375ms ease-in .2s, transform .3s
+              object-fit: cover
+
+          .img-alt
+            display: none
+
+    .flink-item-name
+      @extend .limit-one-line
+      padding: 16px 10px 0 0
+      height: 40px
+      font-weight: bold
+      font-size: 1.43em
+
+    .flink-item-desc
+      @extend .limit-one-line
+      padding: 16px 10px 16px 0
+      height: 50px
+      font-size: .93em
+
+    .flink-name
+      margin-bottom: 5px
+      font-weight: bold
+      font-size: 1.5em
+
+
+
+
+
+      #article-container
+      .flink
+        - let pageContent = page.content
+        if page.flink_url
+          script.
+            (()=>{
+              const replaceSymbol = (str) => {
+                return str.replace(/[\p{P}\p{S}]/gu, "-")
+              }
+    
+              let result = ""
+              fetch("!{url_for(page.flink_url)}")
+                .then(response => response.json())
+                .then(str => {
+                  for(let i = 0; i < str.length; i++){
+                    const replaceClassName = replaceSymbol(str[i].class_name)
+                    const className = str[i].class_name ? `<h2 id="${replaceClassName}"><a href="#${replaceClassName}" class="headerlink" title="${str[i].class_name}"></a>${str[i].class_name}</h2>` : ""
+                    const classDesc = str[i].class_desc ? `<div class="flink-desc">${str[i].class_desc}</div>` : ""
+                    
+                    let listResult = ""
+                    const lists = str[i].link_list
+                    for(let j = 0; j < lists.length; j++){
+                      listResult += `
+                        <div class="flink-list-item">
+                          <a href="${lists[j].link}" title="${lists[j].name}" target="_blank">
+                            <div class="flink-item-icon">
+                              <img class="no-lightbox" src="${lists[j].avatar}" onerror='this.onerror=null;this.src="!{url_for(theme.error_img.flink)}"' alt="${lists[j].name}" />
+                            </div>
+                            <div class="flink-item-name">${lists[j].name}</div> 
+                            <div class="flink-item-desc" title="${lists[j].descr}">${lists[j].descr}</div>
+                          </a>
+                        </div>`
+                    }
+    
+                    result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
+                  }
+    
+                  document.querySelector(".flink").insertAdjacentHTML("afterbegin", result)
+                })
+            })()
+    
+        else
+          if site.data.link
+            - let result = ""
+            each i in site.data.link
+              - let className = i.class_name ? markdown(`## ${i.class_name}`) : ""
+              - let classDesc = i.class_desc ? `<div class="flink-desc">${i.class_desc}</div>` : ""
+    
+              - let listResult = ""
+    
+              each j in i.link_list
+                - 
+                  listResult += `
+                    <div class="flink-list-item">
+                      <a href="${j.link}" title="${j.name}" target="_blank">
+                        <div class="flink-item-icon">
+                          <img class="no-lightbox" src="${j.avatar}" onerror='this.onerror=null;this.src="${url_for(theme.error_img.flink)}"' alt="${j.name}" />
+                        </div>
+                        <div class="flink-item-name">${j.name}</div> 
+                        <div class="flink-item-desc" title="${j.descr}">${j.descr}</div>
+                      </a>
+                    </div>`
+                -
+    
+              - result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
+    
+            - pageContent = result + pageContent
+        != pageContent
+    
