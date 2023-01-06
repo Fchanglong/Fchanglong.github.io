@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>博客</title>
-  
+  <icon>https://www.gravatar.com/avatar/1ab7efb7e15a5c737bca13a2e6d960b0</icon>
   
   <link href="https://fchanglong.github.io/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>Chang Long</name>
-    
+    <email>aa845687414@qq.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
