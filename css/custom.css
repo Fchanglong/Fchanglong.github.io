@@ -379,3 +379,10 @@
   #article-container figure.highlight {
     border-radius: 10px;
   }
+
+
+  .loading-img {
+    /* background-color: red; */
+    background: url(https://blog.canglong.xyz/img/touxiang.jpg) no-repeat center center;
+    background-size: cover;
+  }
