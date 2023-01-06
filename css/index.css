@@ -2242,14 +2242,6 @@ figure.highlight pre .javascript .function {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
-#article-container .flink {
-  margin-bottom: 20px;
-}
-#article-container .flink .flink-list {
-  overflow: auto;
-  padding: 10px 10px 0;
-  text-align: center;
-}
 .flink-desc {
   margin: 0.2rem 0 0.5rem;
 }
@@ -2452,13 +2444,12 @@ figure.highlight pre .javascript .function {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-.flexcard-flink-list > a:hover::before {
+.flexcard-flink-list > a:hover::after {
   position: fixed;
-  width: inherit;
   margin: auto;
   left: 0;
   right: 0;
-  top: 10%;
+  bottom: 0;
   border-radius: 10px;
   text-align: center;
   z-index: 100;
@@ -2586,7 +2577,7 @@ figure.highlight pre .javascript .function {
 .justified-gallery > a > a > svg,
 .justified-gallery > div > a > svg,
 .justified-gallery > figure > a > svg {
-  position: static;
+  position: static !important;
 }
 #recent-posts > .recent-post-item:not(:first-child) {
   margin-top: 20px;
