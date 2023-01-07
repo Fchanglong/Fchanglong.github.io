@@ -15,3 +15,15 @@ document.addEventListener("visibilitychange", function () {
     }, 2000);
   }
 });
+
+// if (document.querySelector('#bber-talk')) {
+//   console.log(112);
+//   var swiper = new Swiper('.swiper-container', {
+//     direction: 'vertical', // 垂直切换选项
+//     loop: true,
+//     autoplay: {
+//     delay: 3000,
+//     pauseOnMouseEnter: true
+//   },
+//   });
+// }
