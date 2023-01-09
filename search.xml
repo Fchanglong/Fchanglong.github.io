@@ -70,33 +70,22 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>即刻短文</title>
-      <link href="/essay/index.html"/>
-      <url>/essay/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/essay_page.css"/>
+      <url>/css/essay_page.css</url>
+      
+        <content type="html"><![CDATA[/* #page:has(#essay_page) {    border: 0;    box-shadow: none !important;    padding: 0 !important;    background: transparent !important;  }  #page:has(#essay_page) .page-title {    display: none;  }  #web_bg ~ .page:has(#essay_page) {    background: var(--anzhiyu-background);  } */  #bber .bber-container-img {    display: flex;    align-items: center;    justify-content: space-around;    width: 100%;    flex-wrap: wrap;    margin-bottom: 0.3rem;  }  #bber .bber-container-img .bber-content-noimg {    width: calc(100% / 4 - 5px);  }    #bber .bber-content-img img {    object-fit: cover;    max-height: 100%;    border-radius: 12px;  }    #bber .bber-content-img {    height: 100px;    border-radius: 12px;    overflow: hidden;    display: flex;    position: relative;    width: calc(100% / 4 - 5px);    margin-bottom: 10px;  }    #bber .bber-content .datacont {    order: 0;    font-size: 0.8rem;    font-weight: 700;    color: var(--anzhiyu-fontcolor);    width: 100%;    line-height: 1.38;    border-radius: 12px;    margin-bottom: 0.5rem;    display: flex;    flex-direction: column;    text-align: justify;  }  #bber p {    margin: 0px;  }  #bber div.bber-content {    display: flex;    flex-flow: wrap;    border-radius: 12px;    width: 100%;    height: 100%;  }  #bber .timeline ul li.bber-item {    position: relative;    width: 32%;    border: var(--style-border-always);    border-radius: 12px;    padding: 1rem 1rem 0.5rem;    transition: all 0.3s ease 0s;    display: flex;    flex-flow: column nowrap;    justify-content: space-between;    align-items: flex-start;    background: var(--anzhiyu-card-bg);    box-shadow: var(--anzhiyu-shadow-border);    margin-right: 2%;  }  #bber .timeline #waterfall.show {    opacity: 1;  }  #bber .timeline #waterfall {    opacity: 0;    transition: all 0.3s ease 0s;  }  #bber ul.list {    display: flex;    flex-flow: row wrap;    justify-content: space-between;  }  #bber {    margin-top: 1rem;    width: 100%;  }  #bber > section > ul > li.bber-item {    margin-bottom: 1rem;  }    #bber-tips {    font-size: 14px;    display: flex;    justify-content: center;    margin-top: 1rem;  }    #bber .timeline ul li.bber-item hr {    display: flex;    position: relative;    margin: 8px 0px;    border: 1px dashed var(--anzhiyu-theme-op);    width: 100%;  }    #bber .bber-info {    display: flex;    align-items: center;  }    #bber > section > ul > li > div .bber-info-time,  #bber > section > ul > li > div .bber-info-from {    color: var(--anzhiyu-fontcolor);    font-size: 0.7rem;    background-color: var(--anzhiyu-gray-op);    padding: 0px 8px;    border-radius: 20px;    cursor: default;    display: flex;    align-items: center;  }    #bber .bber-info .far.fa-clock {    margin-right: 4px;  }  #bber > section > ul > li > div .bber-info-from span,  #bber > section > ul > li > div .bber-info-from {    margin-left: 4px;  }    #bber .bber-bottom {    display: flex;    justify-content: space-between;    width: 100%;    margin-top: 10px;  }    #bber .bber-bottom .bber-reply {    cursor: url(/img/x2.cur), auto !important;  }    #bber .timeline ul li.bber-item:hover {    border: var(--style-border-hover);  }    #bber .bber-content-link {    display: flex;    margin-left: 0.5rem;    font-size: 0.7rem;    align-items: center;    background-color: rgba(245, 108, 108, 0.13);    color: rgb(245, 108, 108);    padding: 0px 8px;    border-radius: 20px;  }  #bber .bber-content-link i {    margin-right: 3px;  }  #bber .bber-content-link:hover {    background-color: var(--anzhiyu-main);    color: var(--anzhiyu-white);  }  #bber .bber-music {    width: 100%;    height: 90px;    margin: 0.5rem 0;    border-radius: 8px;    overflow: hidden;    border: var(--style-border-always);    background: var(--anzhiyu-secondbg);  }  #bber .aplayer {    margin: 0;  }    #bber .aplayer.aplayer-withlrc .aplayer-pic {    height: 82px;    width: 82px;    margin: 4px;    border-radius: 4px;  }  .bber-music .aplayer.aplayer-withlrc .aplayer-info {    padding: 5px 7px 0;  }  #bber .aplayer .aplayer-info .aplayer-music {    height: 23px;  }  #bber .aplayer .aplayer-info .aplayer-music .aplayer-title {    font-size: 0.8rem;    font-weight: 700;    margin: 0;    color: var(--anzhiyu-fontcolor);  }    #bber .aplayer .aplayer-info .aplayer-controller {    align-items: center;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {    padding: 0;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {    position: initial;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {    background: var(--anzhiyu-gray);    height: 8px;    border-radius: 12px;    transition: 0.3s;    overflow: hidden;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {    height: 100%;    border-radius: 12px;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {    height: 100%;    border-radius: 12px;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {    display: none;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {    position: initial;  }    /* 顶部样式 */  .author-content.author-content-item.essayPage {    height: 19rem;    background: url(https://img02.anzhiy.cn/adminuploads/1/2022/08/21/630249e2df20f.jpg) left 28% / cover no-repeat;    color: var(--anzhiyu-white);    overflow: hidden;    margin-top: 0px;  }  /* #page:has(#essay_page) .author-content-item .card-content .banner-button-group .banner-button:hover {    color: var(--anzhiyu-white);    border-radius: 20px !important;  } */    /* 响应式 */  @media screen and (max-width: 1300px) {    #bber .timeline ul li.bber-item {      width: 49%;      margin-right: 1%;    }  }  @media screen and (max-width: 768px) {    #bber .timeline ul li.bber-item {      width: 100%;      margin-right: 0px;    }  }  [data-theme="dark"] #bber .bber-music .aplayer,  [data-theme="dark"] #bber .aplayer .aplayer-lrc:before,  [data-theme="dark"] #bber .aplayer .aplayer-lrc:after {    background: var(--anzhiyu-card-bg);    color: var(--anzhiyu-fontcolor);  }  #bber .aplayer .aplayer-lrc p {    color: var(--anzhiyu-fontcolor);  }]]></content>
       
     </entry>
     
@@ -126,17 +115,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/essay_page.css"/>
-      <url>/css/essay_page.css</url>
-      
-        <content type="html"><![CDATA[/* #page:has(#essay_page) {    border: 0;    box-shadow: none !important;    padding: 0 !important;    background: transparent !important;  }  #page:has(#essay_page) .page-title {    display: none;  }  #web_bg ~ .page:has(#essay_page) {    background: var(--anzhiyu-background);  } */  #bber .bber-container-img {    display: flex;    align-items: center;    justify-content: space-around;    width: 100%;    flex-wrap: wrap;    margin-bottom: 0.3rem;  }  #bber .bber-container-img .bber-content-noimg {    width: calc(100% / 4 - 5px);  }    #bber .bber-content-img img {    object-fit: cover;    max-height: 100%;    border-radius: 12px;  }    #bber .bber-content-img {    height: 100px;    border-radius: 12px;    overflow: hidden;    display: flex;    position: relative;    width: calc(100% / 4 - 5px);    margin-bottom: 10px;  }    #bber .bber-content .datacont {    order: 0;    font-size: 0.8rem;    font-weight: 700;    color: var(--anzhiyu-fontcolor);    width: 100%;    line-height: 1.38;    border-radius: 12px;    margin-bottom: 0.5rem;    display: flex;    flex-direction: column;    text-align: justify;  }  #bber p {    margin: 0px;  }  #bber div.bber-content {    display: flex;    flex-flow: wrap;    border-radius: 12px;    width: 100%;    height: 100%;  }  #bber .timeline ul li.bber-item {    position: relative;    width: 32%;    border: var(--style-border-always);    border-radius: 12px;    padding: 1rem 1rem 0.5rem;    transition: all 0.3s ease 0s;    display: flex;    flex-flow: column nowrap;    justify-content: space-between;    align-items: flex-start;    background: var(--anzhiyu-card-bg);    box-shadow: var(--anzhiyu-shadow-border);    margin-right: 2%;  }  #bber .timeline #waterfall.show {    opacity: 1;  }  #bber .timeline #waterfall {    opacity: 0;    transition: all 0.3s ease 0s;  }  #bber ul.list {    display: flex;    flex-flow: row wrap;    justify-content: space-between;  }  #bber {    margin-top: 1rem;    width: 100%;  }  #bber > section > ul > li.bber-item {    margin-bottom: 1rem;  }    #bber-tips {    font-size: 14px;    display: flex;    justify-content: center;    margin-top: 1rem;  }    #bber .timeline ul li.bber-item hr {    display: flex;    position: relative;    margin: 8px 0px;    border: 1px dashed var(--anzhiyu-theme-op);    width: 100%;  }    #bber .bber-info {    display: flex;    align-items: center;  }    #bber > section > ul > li > div .bber-info-time,  #bber > section > ul > li > div .bber-info-from {    color: var(--anzhiyu-fontcolor);    font-size: 0.7rem;    background-color: var(--anzhiyu-gray-op);    padding: 0px 8px;    border-radius: 20px;    cursor: default;    display: flex;    align-items: center;  }    #bber .bber-info .far.fa-clock {    margin-right: 4px;  }  #bber > section > ul > li > div .bber-info-from span,  #bber > section > ul > li > div .bber-info-from {    margin-left: 4px;  }    #bber .bber-bottom {    display: flex;    justify-content: space-between;    width: 100%;    margin-top: 10px;  }    #bber .bber-bottom .bber-reply {    cursor: url(/img/x2.cur), auto !important;  }    #bber .timeline ul li.bber-item:hover {    border: var(--style-border-hover);  }    #bber .bber-content-link {    display: flex;    margin-left: 0.5rem;    font-size: 0.7rem;    align-items: center;    background-color: rgba(245, 108, 108, 0.13);    color: rgb(245, 108, 108);    padding: 0px 8px;    border-radius: 20px;  }  #bber .bber-content-link i {    margin-right: 3px;  }  #bber .bber-content-link:hover {    background-color: var(--anzhiyu-main);    color: var(--anzhiyu-white);  }  #bber .bber-music {    width: 100%;    height: 90px;    margin: 0.5rem 0;    border-radius: 8px;    overflow: hidden;    border: var(--style-border-always);    background: var(--anzhiyu-secondbg);  }  #bber .aplayer {    margin: 0;  }    #bber .aplayer.aplayer-withlrc .aplayer-pic {    height: 82px;    width: 82px;    margin: 4px;    border-radius: 4px;  }  .bber-music .aplayer.aplayer-withlrc .aplayer-info {    padding: 5px 7px 0;  }  #bber .aplayer .aplayer-info .aplayer-music {    height: 23px;  }  #bber .aplayer .aplayer-info .aplayer-music .aplayer-title {    font-size: 0.8rem;    font-weight: 700;    margin: 0;    color: var(--anzhiyu-fontcolor);  }    #bber .aplayer .aplayer-info .aplayer-controller {    align-items: center;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {    padding: 0;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {    position: initial;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {    background: var(--anzhiyu-gray);    height: 8px;    border-radius: 12px;    transition: 0.3s;    overflow: hidden;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {    height: 100%;    border-radius: 12px;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {    height: 100%;    border-radius: 12px;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {    display: none;  }  #bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {    position: initial;  }    /* 顶部样式 */  .author-content.author-content-item.essayPage {    height: 19rem;    background: url(https://img02.anzhiy.cn/adminuploads/1/2022/08/21/630249e2df20f.jpg) left 28% / cover no-repeat;    color: var(--anzhiyu-white);    overflow: hidden;    margin-top: 0px;  }  /* #page:has(#essay_page) .author-content-item .card-content .banner-button-group .banner-button:hover {    color: var(--anzhiyu-white);    border-radius: 20px !important;  } */    /* 响应式 */  @media screen and (max-width: 1300px) {    #bber .timeline ul li.bber-item {      width: 49%;      margin-right: 1%;    }  }  @media screen and (max-width: 768px) {    #bber .timeline ul li.bber-item {      width: 100%;      margin-right: 0px;    }  }  [data-theme="dark"] #bber .bber-music .aplayer,  [data-theme="dark"] #bber .aplayer .aplayer-lrc:before,  [data-theme="dark"] #bber .aplayer .aplayer-lrc:after {    background: var(--anzhiyu-card-bg);    color: var(--anzhiyu-fontcolor);  }  #bber .aplayer .aplayer-lrc p {    color: var(--anzhiyu-fontcolor);  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/flink.css"/>
       <url>/css/flink.css</url>
       
@@ -159,17 +137,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/progress_bar.css"/>
-      <url>/css/progress_bar.css</url>
-      
-        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;    z-index: 2000;    position: fixed;    margin: auto;    top: 10px;    left: 0;    right: 0;    height: 8px;    border-radius: 8px;    width: 4rem;    background: #eaecf2;    border: 1px #e3e8f7;    overflow: hidden;  }    .pace-inactive .pace-progress {    opacity: 0;    transition: 0.3s ease-in;  }    .pace .pace-progress {    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;    -ms-box-sizing: border-box;    -o-box-sizing: border-box;    box-sizing: border-box;    -webkit-transform: translate3d(0, 0, 0);    -moz-transform: translate3d(0, 0, 0);    -ms-transform: translate3d(0, 0, 0);    -o-transform: translate3d(0, 0, 0);    transform: translate3d(0, 0, 0);    max-width: 200px;    position: absolute;    z-index: 2000;    display: block;    top: 0;    right: 100%;    height: 100%;    width: 100%;    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);    animation: gradient 1.5s ease infinite;    background-size: 200%;  }    .pace.pace-inactive {    opacity: 0;    transition: 0.3s;    top: -8px;  }  @keyframes gradient {    0% {      background-position: 0% 50%;    }    50% {      background-position: 100% 50%;    }    100% {      background-position: 0% 50%;    }  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/md.css"/>
       <url>/css/md.css</url>
       
@@ -180,9 +147,20 @@
     
     
     <entry>
-      <title>友人账</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title></title>
+      <link href="/css/progress_bar.css"/>
+      <url>/css/progress_bar.css</url>
+      
+        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;    z-index: 2000;    position: fixed;    margin: auto;    top: 10px;    left: 0;    right: 0;    height: 8px;    border-radius: 8px;    width: 4rem;    background: #eaecf2;    border: 1px #e3e8f7;    overflow: hidden;  }    .pace-inactive .pace-progress {    opacity: 0;    transition: 0.3s ease-in;  }    .pace .pace-progress {    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;    -ms-box-sizing: border-box;    -o-box-sizing: border-box;    box-sizing: border-box;    -webkit-transform: translate3d(0, 0, 0);    -moz-transform: translate3d(0, 0, 0);    -ms-transform: translate3d(0, 0, 0);    -o-transform: translate3d(0, 0, 0);    transform: translate3d(0, 0, 0);    max-width: 200px;    position: absolute;    z-index: 2000;    display: block;    top: 0;    right: 100%;    height: 100%;    width: 100%;    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);    animation: gradient 1.5s ease infinite;    background-size: 200%;  }    .pace.pace-inactive {    opacity: 0;    transition: 0.3s;    top: -8px;  }  @keyframes gradient {    0% {      background-position: 0% 50%;    }    50% {      background-position: 100% 50%;    }    100% {      background-position: 0% 50%;    }  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -224,11 +202,33 @@
     
     
     <entry>
+      <title>友人账</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/js/title.js"/>
       <url>/js/title.js</url>
       
         <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener("visibilitychange", function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = "w(ﾟДﾟ)w 不要走！再看看嘛！";    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = "♪(^∇^*)欢迎肥来！" + OriginTitile;    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});// if (document.querySelector('#bber-talk')) {//   console.log(112);//   var swiper = new Swiper('.swiper-container', {//     direction: 'vertical', // 垂直切换选项//     loop: true,//     autoplay: {//     delay: 3000,//     pauseOnMouseEnter: true//   },//   });// }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>即刻短文</title>
+      <link href="/essay/index.html"/>
+      <url>/essay/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
