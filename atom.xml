@@ -6,7 +6,7 @@
   <link href="https://fchanglong.github.io/atom.xml" rel="self"/>
   
   <link href="https://fchanglong.github.io/"/>
-  <updated>2023-01-07T06:23:52.097Z</updated>
+  <updated>2023-01-09T07:45:02.176Z</updated>
   <id>https://fchanglong.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何迁移hexo博客</title>
+    <link href="https://fchanglong.github.io/posts/a2ebb741.html"/>
+    <id>https://fchanglong.github.io/posts/a2ebb741.html</id>
+    <published>2023-01-09T05:59:02.912Z</published>
+    <updated>2023-01-09T07:45:02.176Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="首先备份这些文件"><a href="#首先备份这些文件" class="headerlink" title="首先备份这些文件"></a>首先备份这些文件</h1><p>可以打包成一个文件，或者上传到 geihub 上<br>上传到 github 需要把 <mark class="hl-label blue">.gitignore</mark> 上限制的文件先去掉在上传到 github 上<br><img src="https://i.imgur.com/20za07K.png" alt=""></p><h1 id="准备好-git-node-hexo"><a href="#准备好-git-node-hexo" class="headerlink" title="准备好 git node hexo"></a>准备好 git node hexo</h1><p>安装<a href="https://git-scm.com/downloads">git</a></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的名字&quot;</span><br><span class="line">git config --global user.email &quot;你的邮箱&quot;</span><br></pre></td></tr></table></figure><p>安装<a href="https://nodejs.org/zh-cn/">node</a>全程下一步 不建议最新版</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><h1 id="把文件迁移到你的电脑"><a href="#把文件迁移到你的电脑" class="headerlink" title="把文件迁移到你的电脑"></a>把文件迁移到你的电脑</h1><p>用 vscode 打开安装依赖</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><h1 id="下载-hexo-的-git-工具"><a href="#下载-hexo-的-git-工具" class="headerlink" title="下载 hexo 的 git 工具"></a>下载 hexo 的 git 工具</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>下载完就可以用 hexo 命令 等等</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo cl  清除缓存</span><br><span class="line">hexo d  上传到github</span><br><span class="line">hexo g  更新</span><br><span class="line">hexo d -g  更新顺带上传到github上</span><br></pre></td></tr></table></figure><p>做完之后就可以开始写你的博客文章了。</p>]]></content>
+    
+    
+    <summary type="html">迁移</summary>
+    
+    
+    
+    <category term="学习" scheme="https://fchanglong.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技術" scheme="https://fchanglong.github.io/tags/%E6%8A%80%E8%A1%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo搭建博客</title>
     <link href="https://fchanglong.github.io/posts/b37651.html"/>
     <id>https://fchanglong.github.io/posts/b37651.html</id>
     <published>2023-01-05T02:45:16.734Z</published>
-    <updated>2023-01-07T06:23:52.097Z</updated>
+    <updated>2023-01-09T06:19:59.156Z</updated>
     
     <content type="html"><![CDATA[<p>Keywords: title: technology class tags: life封面:<a href="https://image.anzhiy.cn/adminuploads/1/2022/08/18/62fdf0862a541.png">https://image.anzhiy.cn/adminuploads/1/2022/08/18/62fdf0862a541.png</a>‘<br>asdasdasdas<br><div class="fj-gallery"><p><img src="https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg" alt=""></p>          </div></p><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">壁纸</div>  <p>收藏的一些壁纸</p>  <a href='/Gallery/wallpaper'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">漫威</div>  <p>关于漫威的图片</p>  <a href='/Gallery/marvel'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">OH MY GIRL</div>  <p>关于OH MY GIRL的图片</p>  <a href='/Gallery/ohmygirl'></a>  </figcaption>  </figure>  </div>]]></content>
     
@@ -42,12 +63,12 @@
     <link href="https://fchanglong.github.io/posts/4a17b156.html"/>
     <id>https://fchanglong.github.io/posts/4a17b156.html</id>
     <published>2023-01-04T03:27:04.617Z</published>
-    <updated>2023-01-07T09:54:44.408Z</updated>
+    <updated>2023-01-09T06:19:55.042Z</updated>
     
     <content type="html"><![CDATA[<h1 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;% tabs test1 %&#125;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**This is Tab 1.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**This is Tab 2.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**This is Tab 3.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br><span class="line"></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm install 或 yarn </span><br><span class="line">#npm install hexo-deployer-git --save</span><br><span class="line">#npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><h1 id="安装-Butterfly"><a href="#安装-Butterfly" class="headerlink" title="安装 Butterfly"></a>安装 Butterfly</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在git上克隆包</span><br><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><h1 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">要上传到github就使用 hexo d -g</span><br><span class="line">本地运行</span><br><span class="line">yarn server</span><br></pre></td></tr></table></figure><h1 id="官网链接"><a href="#官网链接" class="headerlink" title="官网链接"></a>官网链接</h1><p><a href="https://hexo.io/zh-cn/">hexo</a><br><a href="https://github.com/hexojs/hexo">github</a><br>啊实打实的</p><h1 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h1><p><a href="https://hexo.io/themes/">主题</a></p><details><summary>点击查看侧边栏标签修改魔改教程</summary></details>]]></content>
     
     
-    <summary type="html">45645646asdasdasd4</summary>
+    <summary type="html">如何使用hexo搭建博客</summary>
     
     
     
