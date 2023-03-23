@@ -6,7 +6,7 @@
   <link href="https://fchanglong.github.io/atom.xml" rel="self"/>
   
   <link href="https://fchanglong.github.io/"/>
-  <updated>2023-03-06T10:00:34.384Z</updated>
+  <updated>2023-03-23T10:00:27.196Z</updated>
   <id>https://fchanglong.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>laravel学习</title>
+    <link href="https://fchanglong.github.io/posts/c01ea87.html"/>
+    <id>https://fchanglong.github.io/posts/c01ea87.html</id>
+    <published>2023-03-23T08:26:06.049Z</published>
+    <updated>2023-03-23T10:00:27.196Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>如果你也想自己写属于自己的 api 可以看这个篇文章</strong></p><ul><li><a href="https://laravel.com/docs/10.x">laravel 官方文档 10</a></li><li><a href="https://learnku.com/docs/laravel/9.x">中文版 9</a></li></ul><h1 id="安装必须工具"><a href="#安装必须工具" class="headerlink" title="安装必须工具"></a>安装必须工具</h1><ul><li>首先先安装 composer <a href="https://getcomposer.org/">https://getcomposer.org/</a> 全程下一步</li><li>安装 php，数据库等 个人使用的是小皮这个方便可以一键安装<ul><li>官方链接 <a href="https://www.xp.cn/">https://www.xp.cn/</a></li><li><a href="https://public.xp.cn/upgrades/phpStudy_64.zip">https://public.xp.cn/upgrades/phpStudy_64.zip</a>也可以点这个链接直接下载也是全程下一步</li></ul></li></ul><h1 id="安装-laravel"><a href="#安装-laravel" class="headerlink" title="安装 laravel"></a>安装 laravel</h1><font size=3>安装完就可以用 vscode 随便打开一个文件夹然后终端里面打这句 example-app 是你的项目名称</font><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer create-project laravel/laravel example-app</span><br></pre></td></tr></table></figure><font size=3>**打开你的小皮启动一下,更改一下目录打开网址就行，我这里使用的是数据库 8 和 php8**</font><p><img src="https://i.imgur.com/JGGbrKj.jpg" alt=""><br><img src="https://i.imgur.com/Tcv5uVe.jpg" alt=""></p><p>选到你创建的目录下的 public 就可以了，去 posman 上测试接口的话要在你复制的网址后面加上 index.php 这样就创建好了一个 php 网站了</p><h1 id="阅读-laravel-文档"><a href="#阅读-laravel-文档" class="headerlink" title="阅读 laravel 文档"></a>阅读 laravel 文档</h1><h2 id="路由文件"><a href="#路由文件" class="headerlink" title="路由文件"></a>路由文件</h2><ul><li>路由页面在resources/views下面创建</li><li>api.php 这个是写 api 路由<ul><li>这几种是常用的，想知道更多请查看文档</li><li>get</li><li>post</li><li>put</li><li>patch</li><li>delete</li><li>…等等</li></ul></li><li>web.php 这个是写网页路由<ul><li>基本路由<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Support</span>\<span class="title">Facades</span>\<span class="title">Route</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Route</span>::<span class="title function_ invoke__">get</span>(<span class="string">&#x27;/greeting&#x27;</span>, function () &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="string">&#x27;Hello World&#x27;</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li>默认路由文件 利用控制器UserController件来执行index()函数<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> <span class="title">App</span>\<span class="title">Http</span>\<span class="title">Controllers</span>\<span class="title">UserController</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Route</span>::<span class="title function_ invoke__">get</span>(<span class="string">&#x27;/user&#x27;</span>, [<span class="title class_">UserController</span>::<span class="variable language_">class</span>, <span class="string">&#x27;index&#x27;</span>]);</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li>视图路由 ‘/welcome’ 展示views下面的welcome页面<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Route</span>::<span class="title function_ invoke__">view</span>(<span class="string">&#x27;/welcome&#x27;</span>, <span class="string">&#x27;welcome&#x27;</span>);</span><br></pre></td></tr></table></figure></li><li>路由名前缀 prefix(‘xxx’) 访问时需要在路由前面增加xxx<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Route</span>::<span class="title function_ invoke__">prefix</span>(<span class="string">&#x27;admin&#x27;</span>)-&gt;<span class="title function_ invoke__">group</span>(function () &#123;</span><br><span class="line">    <span class="title class_">Route</span>::<span class="title function_ invoke__">get</span>(<span class="string">&#x27;/users&#x27;</span>, function () &#123;</span><br><span class="line">        <span class="comment">// Matches The &quot;/admin/users&quot; URL</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li></ul></li></ul><h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><ul><li>定义中间件<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php artisan make:middleware EnsureTokenIsValid</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+    <summary type="html">从零开始学习laravel框架。</summary>
+    
+    
+    
+    <category term="学习" scheme="https://fchanglong.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技術" scheme="https://fchanglong.github.io/tags/%E6%8A%80%E8%A1%93/"/>
+    
+  </entry>
   
   <entry>
     <title>原生表单的验证组件</title>
